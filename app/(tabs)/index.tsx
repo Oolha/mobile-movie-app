@@ -1,4 +1,4 @@
-import SearchBar from "@/components/SearchBar";
+import SearchBar from "@/components/searchBar";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import {
@@ -79,7 +79,9 @@ export default function Index() {
                   renderItem={({ item, index }) => (
                     <TrendingCard movie={item} index={index} />
                   )}
-                  keyExtractor={(item) => item.movie_id.toString()}
+                  keyExtractor={(item, index) =>
+                    `${item.movie_id.toString()}-${index}`
+                  }
                   ItemSeparatorComponent={() => <View className="w-4" />}
                 />
               </View>
@@ -93,7 +95,7 @@ export default function Index() {
               <FlatList
                 data={movies}
                 renderItem={({ item }) => <MovieCard {...item} />}
-                keyExtractor={(item) => item.id.toString()}
+                keyExtractor={(item, index) => `${item.id.toString()}-${index}`}
                 numColumns={3}
                 columnWrapperStyle={{
                   justifyContent: "flex-start",
