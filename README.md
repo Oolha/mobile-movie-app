@@ -6,6 +6,16 @@ A mobile app for discovering and exploring movies with real-time data and person
 
 **Movie Finder** is a React Native application built with Expo, TypeScript, and Tailwind CSS. The app fetches movie data in real-time and implements a popularity algorithm using Appwrite to rank movies based on user engagement. Designed with modern UI/UX principles, it provides a responsive and visually appealing interface while ensuring scalability and performance.
 
+## 📱 Live Demo
+
+Try out the Movie Finder app on your mobile device using Expo Go:
+
+![Expo QR Code](./assets/images/qrCode.png)
+
+[![Expo](https://img.shields.io/badge/Expo-Run%20in%20Expo-blue.svg?style=flat-square&logo=expo&logoColor=white)]
+
+Simply scan the QR code with your device's camera (iOS) or through the Expo Go app (Android).
+
 ## ⚙️ Tech Stack
 
 - **Expo** - React Native framework for cross-platform development
